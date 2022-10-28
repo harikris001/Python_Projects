@@ -4,12 +4,12 @@ entry = ["rock","paper","scissor"]
 i = 0
 j = 0
 
-cpu = entry[randint(entry,(0,2))]
 
 completed = False
 
 while not completed:
 	player = input("your play: ")
+	cpu = entry[randint(0,2)]
 	if player == cpu:
 		print("Tie")
 		print("Player :" + str(i) + " CPU :" + str(j))
@@ -41,4 +41,3 @@ if i==3:
 	print("You win")
 else :
 	print("CPU win")
-
