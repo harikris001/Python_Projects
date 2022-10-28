@@ -1,0 +1,44 @@
+from random import randint
+
+entry = ["rock","paper","scissor"]
+i = 0
+j = 0
+
+cpu = entry[randint(entry,(0,2))]
+
+completed = False
+
+while not completed:
+	player = input("your play: ")
+	if player == cpu:
+		print("Tie")
+		print("Player :" + str(i) + " CPU :" + str(j))
+	else:
+		if player == "rock":
+			if cpu == "scissor":
+				i+=1
+				print("Player :" + str(i) + " CPU :" + str(j))
+			elif cpu == "paper":
+				j+=1
+				print("Player :" + str(i) + " CPU :" + str(j))
+		elif player == "paper":
+			if cpu == "rock":
+				i+=1
+				print("Player :" + str(i) + " CPU :" + str(j))
+			elif cpu == "scissor":
+			    j+=1
+				print("Player :" + str(i) + " CPU :" + str(j) + "")
+		elif player == "scissor":
+			if cpu == "paper":
+				i+=1
+				print("Player :" + str(i) + " CPU :" + str(j))
+			elif cpu == "rock":
+				j+=1
+				print("Player :" + str(i) + " CPU :" + str(j) +" ")
+	if j==3 or i==3:
+		completed = True
+if i==3:
+	print("You win")
+else :
+	print("CPU win")
+
