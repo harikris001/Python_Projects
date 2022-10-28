@@ -13,28 +13,30 @@ while not completed:
 	if player == cpu:
 		print("Tie")
 		print("Player :" + str(i) + " CPU :" + str(j))
-	else:
+	elif player in entry:
 		if player == "rock":
 			if cpu == "scissor":
 				i+=1
-				print("Player :" + str(i) + " CPU :" + str(j))
+				print("NICE PLAY \n Player :" + str(i) + " CPU :" + str(j))
 			elif cpu == "paper":
 				j+=1
-				print("Player :" + str(i) + " CPU :" + str(j))
+				print("TRY AGAIN \n Player :" + str(i) + " CPU :" + str(j))
 		elif player == "paper":
 			if cpu == "rock":
 				i+=1
-				print("Player :" + str(i) + " CPU :" + str(j))
+				print("NICE PLAY \nPlayer :" + str(i) + " CPU :" + str(j))
 			elif cpu == "scissor":
-			    j+=1
-				print("Player :" + str(i) + " CPU :" + str(j) + "")
+				j+=1
+				print("TRY AGAIN \nPlayer :" + str(i) + " CPU :" + str(j) +" ")
 		elif player == "scissor":
 			if cpu == "paper":
 				i+=1
-				print("Player :" + str(i) + " CPU :" + str(j))
+				print("NICE PLAY \nPlayer :" + str(i) + " CPU :" + str(j))
 			elif cpu == "rock":
 				j+=1
-				print("Player :" + str(i) + " CPU :" + str(j) +" ")
+				print("TRY AGAIN \nPlayer :" + str(i) + " CPU :" + str(j) +" ")
+	else:
+		print("Check the spelling")
 	if j==3 or i==3:
 		completed = True
 if i==3:
