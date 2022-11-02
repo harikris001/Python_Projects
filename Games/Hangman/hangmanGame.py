@@ -58,4 +58,5 @@ while not gameover:
     if user == 1:
         hangman()
     else:
+        print('Bye :)')
         gameover = True
