@@ -45,10 +45,17 @@ def hangman():
             
             
     if lives == 0:
-        print(lives_visual_dict[lives])
+        print(stage[lives])
         print('You died, sorry. The word was', word)
     else:
         print('YAY! You guessed the word', word, '!!')
 
-if __name__ =='__main__':
-    hangman()
+gameover = False
+print ('----------WELCOME TO HANGMAN GAME----------')
+while not gameover:
+    print('\n\nPRESS: 1 to play the game \n PRESS : 2 to exit: \n ')
+    user = int(input())
+    if user == 1:
+        hangman()
+    else:
+        gameover = True
