@@ -13,9 +13,15 @@ button_7 = Button(calc,text="7")
 button_8 = Button(calc,text="8")
 button_9 = Button(calc,text="9")
 button_0 = Button(calc,text="0")
+button_plus = Button(calc,text="+",command = lambda add(numbers.get())
 button_equal = Button(calc,text='=')
 button_clear = Button(calc,text='CE')
 
+def add(num):
+  firstnum = int(numbers.get())
+  global fnum = num
+  secondnum = int(numbers.get())
+  global result = firstnum + secondnum
 
 numbers.grid(row=0,column=0,columnspan=4)
 button_7.grid(row=1,column=0)
