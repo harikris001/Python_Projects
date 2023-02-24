@@ -10,7 +10,7 @@ def calculate_age():
 # Create a tkinter window
 window = tk.Tk()
 window.title("Age Calculator")
-window.geometry('200x130')
+window.geometry('230x130')
 
 # Add labels and input fields
 # Entry window and Date
@@ -26,6 +26,7 @@ month_entry.grid(row=1, column=1)
 # Year
 tk.Label(window, text="Year").grid(row=2, column=0)
 year_entry = tk.Entry(window)
+year_entry.insert(0,"year in YYYY")
 year_entry.grid(row=2, column=1)
 
 result_label = tk.Label(window, text="")
