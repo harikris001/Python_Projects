@@ -3,9 +3,9 @@ from tkinter import ttk
 
 def predict_gender(name):
     name = name.lower()
-    if name[-1] == 'a' or 'i':
+    if name[-1] == 'a' or name[-1] == 'i':
         return "female"
-    elif name[-1] == 'h' or 'n':
+    elif name[-1] == 'h' or name [-1] == 'n':
         return "male"
     else:
         return "unknown"
