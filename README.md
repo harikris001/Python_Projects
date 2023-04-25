@@ -15,6 +15,7 @@ To sum up they include,
 * Gender Predictor
 * Alarm Clock
 * Weather App
-
+* Clock using Turtle
+* Voice Recorder
 
 All these Projects are beginner Level and they helped me understand Important Concepts in Python Programming<br>
